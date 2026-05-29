@@ -70,4 +70,36 @@ To ensure data quality and build trust in the final financial metrics, this pipe
 
 ---
 
+## ⚙️ Quick Start & Reproducibility
+
+To spin up this pipeline on your own local machine or cloud server, follow these steps:
+
+**1. Clone the repository:**
+
+```bash
+git clone [https://github.com/burhansyahid/realtime-attribution-pipeline.git](https://github.com/burhansyahid/realtime-attribution-pipeline.git)
+cd realtime-attribution-pipeline
+
+```
+
+**2. Create a virtual environment:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+```
+
+**3. Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+
+```
+
+**4. Configuration:**
+Ensure your Oracle mTLS wallet is placed in `config/wallet/` and set your environment variables for `DB_USER`, `DB_PASSWORD`, and `DB_DSN`.
+
+---
+
 *Note: Due to security best practices, cryptographic wallets and environment variables have been excluded from this repository.*
