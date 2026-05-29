@@ -7,6 +7,7 @@
 ![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-Orchestration-017CEE.svg?logo=apacheairflow)
 
 ![Streamlit Dashboard](dashboard.png)
+---
 
 ## 📌 Project Overview
 An enterprise-grade, automated ELT (Extract, Load, Transform) data pipeline designed to solve a complex business problem: **Marketing Attribution**. 
