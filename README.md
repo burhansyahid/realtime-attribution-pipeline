@@ -1,5 +1,7 @@
 # 📈 Real-Time Marketing Attribution Pipeline
 
+![Streamlit Dashboard](dashboard.png)
+
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-Event_Bus-black.svg?logo=apachekafka)
 ![Oracle Cloud](https://img.shields.io/badge/Oracle-Autonomous_Data_Warehouse-F80000.svg?logo=oracle)
