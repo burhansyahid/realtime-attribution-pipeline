@@ -7,6 +7,7 @@
 ![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-Orchestration-017CEE.svg?logo=apacheairflow)
 
 ![Streamlit Dashboard](dashboard.png)
+
 ---
 
 ## 📌 Project Overview
@@ -40,6 +41,16 @@ graph TD
 
 ```
 
+## 🏅 Data Modeling: The Medallion Architecture
+
+To ensure data quality and build trust in the final financial metrics, this pipeline strictly follows the Medallion Architecture pattern within the Oracle Data Warehouse:
+
+* **🥉 Bronze Layer (Raw):** Unstructured JSON payloads from Kafka are landed here immediately via the Python consumer. This is a historical, immutable ledger of every event exactly as it happened.
+* **🥈 Silver Layer (Cleaned & Sessionized):** dbt cleans the raw data, filters out bot traffic/nulls, casts data types, and groups individual clicks and purchases into distinct "User Sessions."
+* **🥇 Gold Layer (Business Aggregates):** The final presentation layer. dbt runs complex window functions on the Silver data to calculate Last-Touch Attribution, outputting the final `gold_campaign_performance` table with metrics like Ad Spend, Revenue, and Blended ROAS. This table directly powers the Streamlit dashboard.
+
+---
+
 ## 🛠️ The Tech Stack
 
 * **Data Generation:** Python (`Faker`) simulating a high-volume, stateful user journey.
@@ -60,3 +71,7 @@ graph TD
 ---
 
 *Note: Due to security best practices, cryptographic wallets and environment variables have been excluded from this repository.*
+
+```
+
+```
