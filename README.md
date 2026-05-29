@@ -71,7 +71,3 @@ To ensure data quality and build trust in the final financial metrics, this pipe
 ---
 
 *Note: Due to security best practices, cryptographic wallets and environment variables have been excluded from this repository.*
-
-```
-
-```
