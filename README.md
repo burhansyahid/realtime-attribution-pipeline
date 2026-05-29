@@ -1,12 +1,12 @@
 # 📈 Real-Time Marketing Attribution Pipeline
 
-![Streamlit Dashboard](dashboard.png)
-
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-Event_Bus-black.svg?logo=apachekafka)
 ![Oracle Cloud](https://img.shields.io/badge/Oracle-Autonomous_Data_Warehouse-F80000.svg?logo=oracle)
 ![dbt](https://img.shields.io/badge/dbt-Data_Transformations-FF694B.svg?logo=dbt)
 ![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-Orchestration-017CEE.svg?logo=apacheairflow)
+
+![Streamlit Dashboard](dashboard.png)
 
 ## 📌 Project Overview
 An enterprise-grade, automated ELT (Extract, Load, Transform) data pipeline designed to solve a complex business problem: **Marketing Attribution**. 
