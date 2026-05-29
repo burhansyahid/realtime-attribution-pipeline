@@ -1,0 +1,18 @@
+# Virtual Environments
+venv/
+airflow-venv/
+
+# Credentials & Secrets (CRITICAL)
+config/wallet/
+.env
+
+# Logs and Local Databases
+logs/
+airflow/logs/
+airflow/airflow.db
+airflow/airflow-webserver.pid
+airflow/standalone_admin_password.txt
+
+# Python Cache
+__pycache__/
+*.pyc

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: oracle_bronze
+    schema: admin
+    tables:
+      - name: bronze_ad_clicks
+      - name: bronze_conversions
